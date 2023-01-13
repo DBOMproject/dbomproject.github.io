@@ -3,11 +3,21 @@ import * as React from "react"
 import Layout from "../components/Layout"
 import Seo from "../components/seo"
 import HeroElement from "../components/HeroElement";
+import AdoptingAttestationsElement from "../components/AdoptingAttestationsElement";
+import NewParadigmElement from "../components/NewParadigmElement";
+import DBOMFeaturesElement from "../components/DBOMFeaturesElement";
+import ArchitectureElement from "../components/ArchitectureElement";
+import NetworkBuilding from "../components/NetworkBuilding";
 
 const IndexPage = () => (
 
     <Layout>
         <HeroElement></HeroElement>
+        <AdoptingAttestationsElement></AdoptingAttestationsElement>
+        <NewParadigmElement></NewParadigmElement>
+        <DBOMFeaturesElement></DBOMFeaturesElement>
+        <ArchitectureElement></ArchitectureElement>
+        <NetworkBuilding></NetworkBuilding>
     </Layout>
 )
 
