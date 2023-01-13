@@ -6,6 +6,9 @@ const theme = {
             500: "#0F6296",
         },
     },
+    widths: {
+        landingExtent: '65em',
+    }
 }
 
 export default extendTheme(theme)

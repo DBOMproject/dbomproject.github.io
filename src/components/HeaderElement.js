@@ -60,7 +60,7 @@ const HeaderElement = () => {
                             <NavLink key={link}>{link}</NavLink>
                         ))}
                     </HStack>
-                    <Box width={'5em'}> <Button variant='solid' colorScheme='brand'>Github</Button></Box>
+                    <Box width={'5em'}> <Button variant='solid' colorScheme='brand'>GitHub</Button></Box>
                 </Flex>
             </Flex>
 
