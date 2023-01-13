@@ -18,19 +18,35 @@ const HeroElement = () => {
         }
     })
     return <>
-        <Flex alignItems={"center"} justifyContent={"center"} width={'100%'} mt={'10em'}>
-            <Flex width={'65em'} margin={"auto 0"} justifyContent={'space-between'}>
-                <VStack spacing='2em' maxWidth={"25em"} alignItems={'start'}>
-                    <VStack spacing='2px' alignItems={'start'}>
+        <Flex alignItems={"center"} justifyContent={"center"} width={'100%'} mt={{lg: '10em', base: '3em'}}>
+            <Flex width={{lg: '67em', md: '40em'}} margin={"auto 0"} p={"2em"}
+                  justifyContent={{lg: 'space-between', md: 'center', sm: 'center'}} alignItems={{
+                lg: 'start',
+                base: 'center',
+            }} flexWrap={'wrap-reverse'}>
+                <VStack p={'sm'} spacing='2em' maxWidth={"25em"} alignItems={{
+                    lg: 'start',
+                    base: 'center'
+                }}>
+                    <VStack spacing='2px' alignItems={{
+                        lg: 'start',
+                        base: 'center',
+                    }}>
                         <Heading variant={'h1'} color={'brand.500'}> Standardizing</Heading>
-                        <Heading variant={'h1'}> Attestation Sharing </Heading>
+                        <Heading variant={'h1'} textAlign={{
+                            lg: 'start',
+                            base: 'center',
+                        }}> Attestation Sharing </Heading>
                     </VStack>
-                    <Text>The Digital Bill of Materials (DBoM) provides the missing layer for policy controlled
+                    <Text textAlign={{
+                        lg: 'start',
+                        base: 'center',
+                    }}>The Digital Bill of Materials (DBoM) provides the missing layer for policy controlled
                         attestation
                         sharing between organizations </Text>
                     <Button variant={'solid'} colorScheme={'brand'}>Get Started</Button>
                 </VStack>
-                <Box width={'30em'} height={'20em'}>
+                <Box maxWidth={'30em'} maxHeight={'20em'} mb={{base: "2em", lg: "0"}}>
                     {View}
                 </Box>
             </Flex>
