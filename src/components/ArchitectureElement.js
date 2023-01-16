@@ -1,12 +1,9 @@
 import * as React from "react"
 
 const ArchitectureElement = () => (
-    <>
-        <div>
-
-        </div>
-    </>
+  <>
+    <div></div>
+  </>
 )
-
 
 export default ArchitectureElement

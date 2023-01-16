@@ -1,12 +1,9 @@
 import * as React from "react"
 
 const DBOMFeaturesElement = () => (
-    <>
-        <div>
-
-        </div>
-    </>
+  <>
+    <div></div>
+  </>
 )
-
 
 export default DBOMFeaturesElement

@@ -1,12 +1,9 @@
 import * as React from "react"
 
 const NetworkBuilding = () => (
-    <>
-        <div>
-
-        </div>
-    </>
+  <>
+    <div></div>
+  </>
 )
-
 
 export default NetworkBuilding
