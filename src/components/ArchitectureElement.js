@@ -25,7 +25,7 @@ const ArchitectureElement = () => (
           <Text fontSize="2xl" pb="1.5rem">
             {`Easy to Run - Easy to Scale!`}
           </Text>
-          <Text fontSize="sm">
+          <Text fontSize="md">
             {`DBoM is built on a modular microservices architecture, with pre-packaged docker based deployments for development and easy-to-use Kubernetes deployments for production use`}
           </Text>
         </Box>

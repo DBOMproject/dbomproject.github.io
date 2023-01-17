@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Box, Button, Container, Text } from "@chakra-ui/react"
+import { Box, Button, Container, Highlight, Text } from "@chakra-ui/react"
 import networkPattern from "../images/network-pattern.svg"
 import { FaGithub } from "react-icons/fa"
 
@@ -28,11 +28,15 @@ const NetworkBuilding = () => (
           <Text mb="1.5rem" fontSize="2xl">
             {`Let’s Build The Network Together!`}
           </Text>
-          <Text fontSize="sm">
-            {`Dive right in with our simple deployments for docker compose and
+          <Text fontSize="md">
+            <Highlight
+              query={["Internet of Attestations"]}
+              styles={{ fontWeight: "bold" }}
+            >
+              {`Dive right in with our simple deployments for docker compose and
             kubernetes. Try DBoM to see the future of supply chain integrity and
-            experience the`}
-            <Text as="b">{` Internet of Attestations`}</Text>
+            experience the Internet of Attestations`}
+            </Highlight>
           </Text>
         </Box>
         <Box

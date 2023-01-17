@@ -65,6 +65,9 @@ const Layout = ({ children }) => {
             variant="solid"
             aria-label="Scroll To Top"
             borderRadius={"20rem"}
+            _hover={{
+              bgColor: "dbomGrey.500",
+            }}
           />
         </Box>
       )}
