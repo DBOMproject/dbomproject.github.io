@@ -68,6 +68,13 @@ const DBOMFeaturesElement = () => (
               md: attestationChannelCardLight,
               lg: attestationChannelCard,
             }}
+            bgSize={"22rem"}
+            bgRepeat={"no-repeat"}
+            transition={"all 0.7s"}
+            _hover={{
+              transform: "scale(1.02)",
+              bgSize: "20rem",
+            }}
           >
             <Text
               fontSize="2xl"
@@ -90,6 +97,13 @@ const DBOMFeaturesElement = () => (
             borderRadius={"1.5rem"}
             bgImage={notaryCard}
             bgPosition={"center top"}
+            bgSize={"21.5rem"}
+            bgRepeat={"no-repeat"}
+            transition={"all 0.7s"}
+            _hover={{
+              transform: "scale(1.02)",
+              bgSize: "20rem",
+            }}
           >
             <Text fontSize="2xl" pt="2rem" textAlign={"center"}>
               {`Notary`}
@@ -106,6 +120,13 @@ const DBOMFeaturesElement = () => (
             borderRadius={"1.5rem"}
             bgImage={connectorsCard}
             bgPosition={"center top"}
+            bgSize={"24rem"}
+            bgRepeat={"no-repeat"}
+            transition={"all 0.7s"}
+            _hover={{
+              transform: "scale(1.02)",
+              bgSize: "22rem",
+            }}
           >
             <Text fontSize="2xl" pt="2rem" textAlign={"center"}>
               {`Connectors`}
@@ -122,6 +143,13 @@ const DBOMFeaturesElement = () => (
             borderRadius={"1.5rem"}
             bgImage={pubSubCard}
             bgPosition={"center top"}
+            bgSize={"23rem"}
+            bgRepeat={"no-repeat"}
+            transition={"all 0.7s"}
+            _hover={{
+              transform: "scale(1.02)",
+              bgSize: "21rem",
+            }}
           >
             <Text fontSize="2xl" pt="2rem" textAlign={"center"}>
               {`Pub Sub`}
@@ -134,10 +162,17 @@ const DBOMFeaturesElement = () => (
             h={"17rem"}
             w={"20rem"}
             m={{ base: "1rem", sm: "1rem", md: "2rem", lg: "0rem" }}
-            mb={{ base: "2rem", sm: "0rem", md: "0rem", lg: "2rem" }}
+            mb={{ base: "2rem", sm: "2rem", md: "2rem", lg: "2rem" }}
             borderRadius={"1.5rem"}
             bgImage={auditabilityCard}
             bgPosition={"center top"}
+            bgSize={"22rem"}
+            bgRepeat={"no-repeat"}
+            transition={"all 0.7s"}
+            _hover={{
+              transform: "scale(1.02)",
+              bgSize: "20rem",
+            }}
           >
             <Text fontSize="2xl" pt="2rem" textAlign={"center"}>
               {`Auditability`}
