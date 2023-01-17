@@ -4,8 +4,14 @@ import { Box, Flex, Image, Text } from "@chakra-ui/react"
 const AdoptingAttestationsCard = ({ title, text, imageSrc }) => (
   <Flex
     background={"white"}
-    boxShadow={"0px 3px 12px rgba(0, 0, 0, 0.1);"}
+    boxShadow={"rgba(149, 157, 165, 0.2) 0px 8px 24px;"}
+    transition={"0.25s all ease-in-out"}
     borderRadius={"md"}
+    _hover={{
+      boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;",
+      transform: "scale(1.02)",
+      borderLeftWidth: "8px",
+    }}
     // minHeight={"6em"}
     pb={2}
     pt={2}
@@ -15,7 +21,6 @@ const AdoptingAttestationsCard = ({ title, text, imageSrc }) => (
   >
     <Flex alignItems={"center"} justifyContent={"center"}>
       <Box padding={5}>
-        {" "}
         <Image objectFit="cover" src={imageSrc} alt={title} />
       </Box>
 

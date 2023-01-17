@@ -1,6 +1,5 @@
 import * as React from "react"
-import { Box, Button, Container, Text, Card } from "@chakra-ui/react"
-import { ArrowForwardIcon } from "@chakra-ui/icons"
+import { Box, Card, Container, Text } from "@chakra-ui/react"
 import attestationChannelCard from "../images/cards/attestation-channels.svg"
 import attestationChannelCardLight from "../images/cards/attestation-channel-light.svg"
 import notaryCard from "../images/cards/notary.svg"
@@ -12,7 +11,7 @@ const DBOMFeaturesElement = () => (
   <>
     <Box
       w={"100%"}
-      h={{ base: "auto", sm: "auto", md: "auto", lg: "58.75rem" }}
+      h={{ base: "auto", sm: "auto", md: "auto", lg: "53rem" }}
       bgGradient="linear(180deg, #0B3E5F 0%, #1A6DA0 100%)"
       display={"flex"}
     >
@@ -182,20 +181,20 @@ const DBOMFeaturesElement = () => (
             </Text>
           </Card>
         </Box>
-        <Box
-          display={"flex"}
-          alignItems={"flex-start"}
-          justifyContent={"flex-start"}
-          mb={{ base: "2rem", sm: "2rem", md: "2rem", lg: "-2rem" }}
-        >
-          <Button
-            rightIcon={<ArrowForwardIcon />}
-            color={"white"}
-            variant="link"
-          >
-            {`See All Features`}
-          </Button>
-        </Box>
+        {/*<Box*/}
+        {/*  display={"flex"}*/}
+        {/*  alignItems={"flex-start"}*/}
+        {/*  justifyContent={"flex-start"}*/}
+        {/*  mb={{ base: "2rem", sm: "2rem", md: "2rem", lg: "-2rem" }}*/}
+        {/*>*/}
+        {/*  <Button*/}
+        {/*    rightIcon={<ArrowForwardIcon />}*/}
+        {/*    color={"white"}*/}
+        {/*    variant="link"*/}
+        {/*  >*/}
+        {/*    {`See All Features`}*/}
+        {/*  </Button>*/}
+        {/*</Box>*/}
       </Container>
     </Box>
   </>

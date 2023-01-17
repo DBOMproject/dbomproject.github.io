@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Box, Button, Container, Text, Image } from "@chakra-ui/react"
+import { Box, Button, Container, Image, Text, Tooltip } from "@chakra-ui/react"
 import { ArrowForwardIcon } from "@chakra-ui/icons"
 import architectureDiagram from "../images/Architecture.png"
 
@@ -7,7 +7,7 @@ const ArchitectureElement = () => (
   <>
     <Box
       w={"100%"}
-      h={{ base: "42rem", sm: "48rem", md: "55rem", lg: "58.75rem" }}
+      h={{ base: "42rem", sm: "48rem", md: "51rem", lg: "53rem" }}
       display={"flex"}
       flexDirection={"column"}
     >
@@ -48,13 +48,16 @@ const ArchitectureElement = () => (
           alignItems={"flex-start"}
           justifyContent={"flex-start"}
         >
-          <Button
-            rightIcon={<ArrowForwardIcon />}
-            color={"brand.500"}
-            variant="link"
-          >
-            {`Know More`}
-          </Button>
+          <Tooltip label={"v2 architecture specifications are coming soon"}>
+            <Button
+              rightIcon={<ArrowForwardIcon />}
+              color={"brand.500"}
+              disabled={true}
+              variant="link"
+            >
+              {`Know More`}
+            </Button>
+          </Tooltip>
         </Box>
       </Container>
     </Box>

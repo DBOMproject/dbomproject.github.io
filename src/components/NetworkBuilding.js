@@ -2,6 +2,7 @@ import * as React from "react"
 import { Box, Button, Container, Highlight, Text } from "@chakra-ui/react"
 import networkPattern from "../images/network-pattern.svg"
 import { FaGithub } from "react-icons/fa"
+import { Link } from "gatsby"
 
 const NetworkBuilding = () => (
   <>
@@ -10,7 +11,7 @@ const NetworkBuilding = () => (
       h={{ base: "30rem", md: "30rem", lg: "31.45rem" }}
       display={"flex"}
       flexDirection={"column"}
-      bg={"networkBackground.500"}
+      bg={"networkBackground.500, linear-gradient(#e66465, #9198e5);"}
       bgImage={networkPattern}
       bgPosition={"center top"}
     >
@@ -45,17 +46,23 @@ const NetworkBuilding = () => (
           justifyContent={"center"}
           mt={{ base: "4rem", sm: "4rem", md: "5rem", lg: "6rem" }}
         >
-          <Button
-            leftIcon={<FaGithub />}
-            variant="outline"
-            border={"0.125rem solid"}
-            borderRadius={"0.5rem"}
-            color={"brand.500"}
-            background={"white"}
-            p={"1.5rem"}
+          <Link
+            href={"https://github.com/DBOMproject/deployments"}
+            isExternal={true}
+            textDecoration={"none"}
           >
-            Explore Deployment Options
-          </Button>
+            <Button
+              leftIcon={<FaGithub />}
+              variant="outline"
+              border={"0.125rem solid"}
+              borderRadius={"0.5rem"}
+              color={"brand.500"}
+              background={"white"}
+              p={"1.5rem"}
+            >
+              Explore Deployment Options
+            </Button>
+          </Link>
         </Box>
       </Container>
     </Box>

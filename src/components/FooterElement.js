@@ -1,6 +1,7 @@
 import * as React from "react"
 import { Box, Image } from "@chakra-ui/react"
 import tlfLogo from "../images/linux-foundation-vert-white.svg"
+import { Link } from "gatsby"
 
 const FooterElement = () => (
   <>
@@ -12,7 +13,13 @@ const FooterElement = () => (
       alignItems={"center"}
       justifyContent={"center"}
     >
-      <Image src={tlfLogo} alt="the-linux-foundation-logo"></Image>
+      <Link
+        href={"https://www.linuxfoundation.org/"}
+        isExternal={true}
+        textDecoration={"none"}
+      >
+        <Image src={tlfLogo} alt="the-linux-foundation-logo"></Image>
+      </Link>
     </Box>
   </>
 )

@@ -2,6 +2,7 @@ import * as React from "react"
 import { Box, Button, Flex, Heading, Text, VStack } from "@chakra-ui/react"
 import { useLottie } from "lottie-react"
 import dbomLayers from "../lottie/dbomLayers.json"
+import { Link } from "gatsby"
 
 const HeroElement = () => {
   const { View: hoveringDbomLottie } = useLottie({
@@ -53,7 +54,6 @@ const HeroElement = () => {
               }}
             >
               <Heading variant={"h1"} color={"brand.500"}>
-                {" "}
                 Standardizing
               </Heading>
               <Heading
@@ -63,8 +63,7 @@ const HeroElement = () => {
                   base: "center",
                 }}
               >
-                {" "}
-                Attestation Sharing{" "}
+                Attestation Sharing
               </Heading>
             </VStack>
             <Text
@@ -76,9 +75,17 @@ const HeroElement = () => {
               The Digital Bill of Materials (DBoM) provides the missing layer
               for policy controlled attestation sharing between organizations{" "}
             </Text>
-            <Button variant={"solid"} colorScheme={"brand"}>
-              Get Started
-            </Button>
+            <Link
+              textDecoration={"none"}
+              href={
+                "https://dbom-project.readthedocs.io/en/latest/getting-started.html"
+              }
+              isExternal={true}
+            >
+              <Button variant={"solid"} colorScheme={"brand"}>
+                Get Started
+              </Button>
+            </Link>
           </VStack>
           <Box
             maxWidth={"30em"}

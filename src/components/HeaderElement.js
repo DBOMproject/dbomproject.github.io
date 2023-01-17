@@ -19,15 +19,15 @@ import { FaGithub } from "react-icons/fa"
 const Links = [
   {
     text: "Docs",
-    href: "",
+    href: "https://dbom-project.readthedocs.io/",
   },
   {
     text: "Slack",
-    href: "",
+    href: "https://communityinviter.com/apps/dbom-project/dbom",
   },
   {
     text: "Community",
-    href: "",
+    href: "https://github.com/DBOMproject/community",
   },
 ]
 
@@ -102,7 +102,11 @@ const HeaderElement = () => {
                 md: "block",
               }}
             >
-              <Link href={"https://github.com/dbomproject"} isExternal={true}>
+              <Link
+                href={"https://github.com/dbomproject"}
+                textDecoration={"none"}
+                isExternal={true}
+              >
                 <Button
                   variant={"solid"}
                   leftIcon={<Icon as={FaGithub} />}
