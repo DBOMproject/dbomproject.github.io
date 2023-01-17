@@ -7,6 +7,7 @@
 
 import * as React from "react"
 import { graphql, useStaticQuery } from "gatsby"
+import ogImage from "../images/og-image.png"
 
 function Seo({ description, title, children }) {
   const { site } = useStaticQuery(
@@ -31,6 +32,7 @@ function Seo({ description, title, children }) {
       <title>{defaultTitle ? `${title} | ${defaultTitle}` : title}</title>
       <meta name="description" content={metaDescription} />
       <meta property="og:title" content={title} />
+      <meta property="og:image" content={ogImage} />
       <meta property="og:description" content={metaDescription} />
       <meta property="og:type" content="website" />
       <meta name="twitter:card" content="summary" />
