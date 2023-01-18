@@ -105,6 +105,9 @@ const HeaderElement = () => {
               <Link
                 href={"https://github.com/dbomproject"}
                 textDecoration={"none"}
+                _hover={{
+                  textDecoration: "none",
+                }}
                 isExternal={true}
               >
                 <Button
