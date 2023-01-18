@@ -3,6 +3,9 @@
   "private": true,
   "description": "Landing page for the DBoM Project",
   "version": "0.1.0",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "author": "Unisys, Linux Foundation",
   "dependencies": {
     "@chakra-ui/gatsby-plugin": "^3.1.1",
