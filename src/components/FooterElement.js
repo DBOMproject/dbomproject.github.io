@@ -7,7 +7,7 @@ const FooterElement = () => (
   <>
     <Box
       w={"100%"}
-      h={"10rem"}
+      h={{ base: "14rem", md: "10rem" }}
       bg={"brand.500"}
       display={"flex"}
       alignItems={"center"}
@@ -28,10 +28,10 @@ const FooterElement = () => (
         justifyContent={"center"}
         flexDir={"column"}
       >
-        <Text color={"white"} fontSize="xs">
+        <Text color={"white"} fontSize="xs" textAlign={"center"}>
           {`Copyright © DBOM Technical Project a Series of LF Projects, LLC`}
         </Text>
-        <Text color={"white"} fontSize="xs">
+        <Text color={"white"} fontSize="xs" textAlign={"center"}>
           {`For website terms of use, trademark policy and other project policies
           please see `}
           <Link href="https://lfprojects.org">
